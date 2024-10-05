@@ -10,6 +10,8 @@
 
         $confirm_password = $_POST["confirm-password"];
 
+      //  echo json_encode(($_POST));
+
         // VALIDATE USERNAME
         
         
