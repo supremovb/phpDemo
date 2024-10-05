@@ -12,7 +12,7 @@
 
         // VALIDATE USERNAME
         
-        /*
+        
 if(trim($username) != "") {
     echo "USER username is NOT EMPTY<br>"; 
 } else {
@@ -39,7 +39,7 @@ if(trim($confirm_password) != "") {
 } else {
     echo "field confirm_password is empty<br>";
 }
-    */
+    
 
         //echo "USER email is ".$email."<br>"; 
 
@@ -53,6 +53,13 @@ if(trim($confirm_password) != "") {
     test($username);
 
     // dummyFunction("liga");
+}
+
+if($password == $confirm_password) {
+    header("location: demo1.php?success=REGISTRATION SUCCESFUL");
+} else {
+    header("location: demo1.php?error=PASSWORDS DO NOT MATCH");
+    exit;
 }
 
 
